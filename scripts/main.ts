@@ -58,7 +58,7 @@ const explodeTile = (origin: { x: number; y: number }, extraDelay: number) => {
         class: "env_explosion",
         keyValues: {
             targetName: targetname,
-            origin: { x: origin.x * cellSize, y: origin.y * cellSize, z: 40 },
+            origin: Vector.add({ x: origin.x * cellSize, y: origin.y * cellSize, z: 40 }, worldOrigin),
             magnitude: 100,
             sound: "BaseGrenade.Explode"
         }
@@ -100,10 +100,7 @@ game.on("round_start", () => {
             soundName: "music.tetris"
         },
         outputs: {
-            onSoundFinished: () => {
-                Instance.Msg("Music finished build in")
-                Instance.EntFireAtName("music", "startsound")
-            }
+            onSoundFinished: () => Instance.EntFireAtName("music", "startsound")
         }
     })
 
