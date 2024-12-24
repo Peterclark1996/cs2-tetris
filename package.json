@@ -1,0 +1,17 @@
+{
+    "name": "tetris",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "s2ts start"
+    },
+    "dependencies": {
+        "s2ts": "0.5.1"
+    },
+    "prettier": {
+        "trailingComma": "none",
+        "tabWidth": 4,
+        "semi": false,
+        "arrowParens": "avoid",
+        "printWidth": 160
+    }
+}

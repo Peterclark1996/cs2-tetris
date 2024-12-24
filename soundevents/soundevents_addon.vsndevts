@@ -1,0 +1,114 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	"amb.base" = 
+	{
+		type = "csgo_mega"
+		mixgroup = "Amb_Common"
+		occlusion_intensity = 0.0
+		distance_effect_mix = 0.0
+		restrict_source_reverb = true
+		use_distance_unfiltered_stereo_mapping_curve = true
+		use_time_volume_mapping_curve = true
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -0.00394, -0.00394,
+				2.0, 3.0,
+			],
+			[
+				300.0, 0.0, -0.002991, -0.002991,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -1.223776, -1.223776,
+				2.0, 3.0,
+			],
+			[
+				0.208571, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				0.297143, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+	}
+	"amb.looping.stereo.base" = 
+	{
+		base = "amb.base"
+		volume = 1.0
+		pitch = 1.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -1.223776, -1.223776,
+				2.0, 3.0,
+			],
+			[
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+	}
+	"music.tetris" = 
+	{
+		base = "amb.looping.stereo.base"
+		type = "csgo_music"
+		volume = 1
+		vsnd_files_track_01 = "sounds/tetris.vsnd"
+	}
+}
