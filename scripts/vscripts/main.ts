@@ -83,6 +83,7 @@ Instance.InitialActivate(() => {
 game.on("round_start", () => {
     gameRunning = false
     runServerCommand("cl_lock_camera 0")
+    Instance.EntFireAtName("cheats-message", "kill")
 
     const spawnPoint = Vector(138, 309, 625)
     const commonKvs = {
